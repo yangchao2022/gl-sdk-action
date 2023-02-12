@@ -73,10 +73,6 @@ echo CONFIG_ALL=y >.config
 make defconfig
 make V=s ./package/feeds/githubaction/${PKGNAME}/compile
 
-cd /
-echo "hello"
-ls
-
 
 find bin -type f -exec ls -lh {} \;
 find bin -type f -name "*.ipk" -exec cp -f {} "${WORKDIR}" \; 
