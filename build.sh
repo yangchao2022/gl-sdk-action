@@ -71,13 +71,13 @@ cat feeds.conf.default
 ./scripts/feeds install -a
 echo CONFIG_ALL=y >.config
 make defconfig
-make V=s ./package/feeds/githubaction/${PKGNAME}/compile
+make V=s LINUX_VERMAGIC:=86cd10224392f0f1f47de97edd009387     ./package/feeds/githubaction/${PKGNAME}/compile
 
 echo "CONFIG_PACKAGE_luci-app-oaf=y" >>.config  
 make defconfig  
 
-make package/luci-app-oaf/compile V=s  
-make V=s  
+make package/luci-app-oaf/compile V=s   LINUX_VERMAGIC:=86cd10224392f0f1f47de97edd009387
+make V=s   LINUX_VERMAGIC:=86cd10224392f0f1f47de97edd009387
 
 find bin -type f -exec ls -lh {} \;
 find bin -type f -name "*.ipk" -exec cp -f {} "${WORKDIR}" \; 
