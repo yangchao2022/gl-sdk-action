@@ -41,7 +41,7 @@ axt1800_sdk_get()
 
 mt7981_sdk_get()
 {
-	 git clone https://github.com/gl-inet-builder/openwrt-sdk-mt7981.git  openwrt-sdk
+	 git clone https://github.com/yangchao2022/openwrt-sdk-mt7981.git  openwrt-sdk
 }
 
 
