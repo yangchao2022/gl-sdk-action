@@ -76,5 +76,8 @@ make V=s ./package/feeds/githubaction/${PKGNAME}/compile
 echo "CONFIG_PACKAGE_luci-app-oaf=y" >>.config  
 make defconfig  
 
+make package/luci-app-oaf/compile V=s  
+make V=s  
+
 find bin -type f -exec ls -lh {} \;
 find bin -type f -name "*.ipk" -exec cp -f {} "${WORKDIR}" \; 
