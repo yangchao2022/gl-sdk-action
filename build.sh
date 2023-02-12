@@ -54,7 +54,7 @@ case "$BOARD" in
 	"AXT1800" )
 		axt1800_sdk_get
 	;;
-	"mt3000" |\
+	"MT3000" |\
 	"MT2500" )
 		mt7981_sdk_get
 	;;
